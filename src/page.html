@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Information</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+
+<!-- Navigation bar with links to different pages -->
+<nav>
+    <ul class="nav__links">
+        <li class="link"><a href="page.html">Homepage</a></li>
+        <li class="link"><a href="index.html">Activities</a></li>
+        <li class="link"><a href="about.html">About Us</a></li>
+    </ul>
+</nav>
+
+<body>
+
+    <!-- Main heading for the page -->
+    <h1>Weather Information</h1>
+    
+    <div class="form-container">
+        <!-- Form to input the country for weather information search -->
+        <form>
+            <input type="text" id="country1-input" placeholder="Enter Country">
+        </form>
+        <div class="buttons-container">
+            <!-- Search button triggers JavaScript function 'buttonClicked' -->
+            <button onclick="buttonClicked()">Search</button>
+            <!-- Button to navigate to CRUD activities page -->
+            <button onclick="gotocrud()">Go to set activities</button>
+        </div>
+    </div>
+
+    <div class="info-container">
+        <!-- Container for displaying weather information items -->
+        <div class="info-item">
+            <span class="info-label">Country:</span>
+            <span id="country1"></span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">Region:</span>
+            <span id="region1"></span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">Current Temperature:</span>
+            <span id="current_temp_c1"></span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">Forecast Temperature:</span>
+            <span id="forecast_temp1"></span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">Wind Speed:</span>
+            <span id="wind_speed_mph1"></span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">Humidity:</span>
+            <span id="humidity1"></span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">Chances of Rain:</span>
+            <span id="rain1"></span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">Chances of Snow:</span>
+            <span id="snow1"></span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">Weather Condition:</span>
+            <span id="wheather1"></span>
+        </div>
+        
+        <div class="info-item">
+            <span class="info-label">Recommendations:</span>
+            <span id="recommendation"></span>
+        </div>
+
+        <!-- Displays weather icon image based on conditions -->
+        <div class="info-item">
+            <span class="info-label">Overview Weather : </span>
+            <img id="weather-icon" alt="Weather icon">
+        </div>
+
+        <!-- Displays the local time in the selected region -->
+        <div class="info-item">
+            <span class="info-label">Local Time :  </span>
+            <span id="time1"></span>
+        </div>
+        
+    </div>
+
+    <!-- Link to JavaScript file for page functionality -->
+    <script src="page.js"></script>
+    
+</body>
+</html>

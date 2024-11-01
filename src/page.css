@@ -1,0 +1,167 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('Picture1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  color: #3d2f29;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+::selection {
+  background-color: #c8a888;
+  color: white;
+}
+
+/* Header */
+h1 {
+  margin: 20px;
+  padding: 15px 30px;
+  background: rgba(69, 64, 64, 0.8);
+  color: #ffffff;
+  font-size: 2.2em;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+/* Form Container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+input[type="text"] {
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid rgba(69, 64, 64, 0.8);
+  border-radius: 8px;
+  width: 280px;
+  font-size: 1em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #b69c87;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 25px;
+  background: rgba(69, 64, 64, 0.8);
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Info Container */
+.info-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 800px;
+  margin: 20px 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.info-item {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+.info-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.info-label {
+  font-weight: bold;
+  color: #4e3b31;
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 1.1em;
+}
+
+span[id^="country"], span[id^="region"], span[id^="current_temp"], span[id^="forecast_temp"], span[id^="wind_speed"], span[id^="humidity"], span[id^="rain"], span[id^="snow"], span[id^="wheather"], #recommendation {
+  color: #555555;
+  font-size: 1em;
+}
+
+/* Responsive Image */
+img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Adjust nav positioning */
+nav {
+  position: absolute; /* Position it absolutely in the top-left */
+  top: 20px;
+  left: 20px;
+  padding: 0; /* Remove any extra padding */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align links to the left */
+  color: #f9f9f9;
+  font-size: large;
+}
+
+/* Nav Links */
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.link a {
+  font-weight: 500;
+  color: #f9f9f9;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.link a:hover {
+  color: #c8a888;
+}
